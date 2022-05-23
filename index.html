@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>你画我来猜</title>
+    <link rel="shortcut icon" href="./images/draw.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/index.js"></script>
+</head>
+
+<body>
+    <div class="wrap1">
+        <div class="word">
+            <div class="text" id="text">
+                <div id="content">香蕉</div>
+                <div class="cover" id="cover">
+                    序号<span id="number">1</span>
+                </div>
+            </div>
+            <div class="remind" id="remind">
+                <div id="count">两个字</div>
+                <div id="des">水果</div>
+            </div>
+            <div class="box1">
+                <div class="change" id="change">
+                    更换词汇
+                </div>
+                <div class="hidden" id="hidden">
+                    显示词汇
+                </div>
+            </div>
+        </div>
+        颜色:<input type="color" id="color" style="cursor: pointer;">
+        绘制工具:
+        <select id="type">
+            <option value="pen">画笔</option>
+            <option value="eraser">橡皮擦</option>
+        </select>
+        <select id="weight">
+            <option value="1">1px</option>
+            <option value="2">2px</option>
+            <option value="4">4px</option>
+            <option value="6">6px</option>
+            <option value="8">8px</option>
+            <option value="16">16px</option>
+            <option value="32">32px</option>
+        </select>
+
+        <input type="button" value="清空画板" id="save">
+    </div>
+    <div class="wrap2">
+        <canvas id="can" width="800" height="500"></canvas>
+    </div>
+</body>
+
+
+</html>
